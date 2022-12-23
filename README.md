@@ -20,7 +20,11 @@ siguiente información: Tiempo de Vinculación a la compañía (años, meses), E
 
 ### Ejecución mediante endpoint en Heroku
 
-1. El siguiente endpoint desplegado en Heroku está disponible para hacer uso de la aplicación ```http://empleados-parameta-app.herokuapp.com/```
+1. El siguiente endpoint desplegado en Heroku está disponible para hacer uso de la aplicación ```http://empleados-parameta-app.herokuapp.com/api/v1/empleados```
+
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](http://empleados-parameta-app.herokuapp.com/api/v1/empleados)
+
+[![CircleCI](https://circleci.com/gh/NicolasAguilera9906/Empleados-APP-Parameta-S.A.S.svg?style=svg)](https://app.circleci.com/pipelines/github/NicolasAguilera9906/Empleados-APP-Parameta-S.A.S)
 
 ### Instalación y ejecución mediante Gradle
 
