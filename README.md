@@ -141,9 +141,18 @@ con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleado
 ### Diagrama de despliegue
 
 1. La aplicación Java (SpringBoot) se encuentra desplegada en Heroku.
-2. Además, la aplicación se comunica con una base de datos relacional mysql por medio de el siguiente servicio se hosting : https://www.freemysqlhosting.net/
+2. Además, la aplicación se comunica con una base de datos relacional mysql por medio de un servicio de hosting proveido por HEROKU llamado https://mysql.jawsdb.com/
 
 ![class](imagenes/arq.png)
+
+3. En caso de querer observar más a detalle la base de datos, estas son las credenciales de acceso. Estas credenciales tambien las puede encontrar en 
+```src\main\resources```
+
+```
+spring.datasource.url=jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_bbf5de8150b9be2
+spring.datasource.username=b030190748847e
+spring.datasource.password=588698ff
+```
 
 ### Estructura de la aplicación 
 
