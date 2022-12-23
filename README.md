@@ -169,7 +169,7 @@ Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta
 
 ## Autor
 
-* **Nicolás Aguilera Contreras** 
+* **[Nicolás Aguilera Contreras](https://www.linkedin.com/in/nicol%C3%A1s-aguilera-contreras-3137a01b2/)** 
 
 ## Licencia
 
