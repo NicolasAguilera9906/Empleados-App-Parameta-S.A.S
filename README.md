@@ -9,14 +9,16 @@ superado estas validaciones se almacernará la información en una base de datos
 siguiente información: Tiempo de Vinculación a la compañía (años, meses), Edad actual del empleado (años, meses y días)
 
 
-### Prerequisitos
+## Prerequisitos
 
 * [Gradle](https://gradle.org/) - Administrador de dependencias
 * [Java 8](https://www.oracle.com/co/java/technologies/javase/javase-jdk8-downloads.html) -  Entorno de desarrollo 
 * [Git](https://git-scm.com/) - Sistema de control de versiones
 * [Postman](https://www.postman.com/) - Plataforma API para contruir y usar APIs
 
-## Instalación y ejecución mediante Gradle
+## Instalacion y ejecución
+
+### Instalación y ejecución mediante Gradle
 
 1. Clone el repositorio
 
@@ -39,6 +41,94 @@ gradlew bootrun
 4. Una vez el proyecto haya sido ejecutado correctamente observará el siguiente mensaje indicando que la aplicación ahora está corriendo en ```http://localhost:8080/```
 
 ![class](imagenes/ins3.png)
+
+### Ejecución mediante endpoint en Heroku
+
+1. También puede utilizar la siguiente dirección para hacer uso de la aplicación ```http://empleados-parameta-app.herokuapp.com/```
+
+## Uso y casos de prueba
+
+1. La aplicación nos permitirá añadir un nuevo empleado perteneciente a la compañia. Este empleado es recibido por medio del cuerpo de la petición utilizando HTTP POST en formato JSON. De esta manera, un empleado se verá de la siguiente manera : 
+
+```
+{
+    "nombre":"Nicolás",
+    "apellido":"Aguilera Contreras",
+    "tipo_documento":"C.C",
+    "numero_documento":"1014308690",
+    "fecha_nacimiento":"1999/10/06",
+    "fecha_vinculacion":"2022/01/01",
+    "cargo":"Desarrollador",
+    "salario":3000000
+}
+```
+
+2. Para realizar la prueba de cada uno de los casos de prueba haremos uso de [Postman](https://www.postman.com/). Allí crearemos una nueva colleción con el método Post 
+con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleados``` si ejecutamos la aplicación desde Heroku, o ```http://localhost:8080/api/v1/empleados``` si ejecutamos la aplicación localmente
+
+![class](imagenes/post1.png)
+
+3. En la parte inferior especificaremos el cuerpo de la petición. Allí incluiremos al empleado en formato JSON :
+
+![class](imagenes/post2.png)
+
+### Añadir un nuevo empleado
+
+1. Realizamos una peticion HTTP con el siguiente usuario :
+
+![class](imagenes/post3.png)
+
+2. El usuario es agregado correctamente a la base de datos y obtenemos la siguiente respuesta, en donde se incluye la edad del empleado y el tiempo que se encuentra trabajando en la compañia :
+
+![class](imagenes/post4.png)
+
+### Validación de campos vacíos
+
+1. Vamos a no incluir un campo a proposito de tal manera que podamos observar la validación de campos vacíos. En este caso, no incluiremos el apellido del Empleado el cual se verá de la siguiente manera :
+
+![class](imagenes/post5.png)
+
+2. Vemos que al momento de enviar la petición se obtiene el siguiente mensaje de error validando el campo vacio:
+
+![class](imagenes/post6.png)
+
+3. También puede ocurrir el caso de que el atributo se encuentre presente pero no tenga valor. En este caso observamos que el apellido es igual a "" :
+
+![class](imagenes/post7.png)
+
+4. Al momento de enviar la petición obtenemos el mismo mensaje de error:
+
+![class](imagenes/post8.png)
+
+### Validación del formato de la fecha
+
+1. La fecha debe seguir el siguiente formato : ```yyyy/mm/dd```. Vamos a incluir a proposito una fecha que no siga ese formato como se observa a continuación
+
+![class](imagenes/post9.png)
+
+2. Al momento de enviar la petición obtendremos el siguiente mensaje de error alertando sobre la petición incorrecta : 
+
+![class](imagenes/post10.png)
+
+3. Adicionalmente, también puede ocurrir que la fecha se encuentre en el futuro, lo cual no sería lógico ni para la fecha de nacimiento ni para le fecha de vinculación. Así, incluiremos este caso a proposito en la fecha de nacimiento :
+
+![class](imagenes/post11.png)
+
+4. Al momento de enviar la petición obtendremos el siguiente mensaje de error alertando sobre la fecha establecida en el futuro : 
+
+![class](imagenes/post12.png)
+
+### Validación Empleado mayor de edad
+
+
+
+### Validación del formato de la fecha
+
+
+
+
+
+
 
 ### Front-End
 
