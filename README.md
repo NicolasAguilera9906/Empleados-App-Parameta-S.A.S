@@ -24,7 +24,7 @@ siguiente información: Tiempo de Vinculación a la compañía (años, meses), E
 
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](http://empleados-parameta-app.herokuapp.com/api/v1/empleados)
 
-[![CircleCI](https://circleci.com/gh/NicolasAguilera9906/Empleados-APP-Parameta-S.A.S.svg?style=svg)](https://app.circleci.com/pipelines/github/NicolasAguilera9906/Empleados-APP-Parameta-S.A.S)
+[![CircleCI](https://circleci.com/gh/NicolasAguilera9906/Empleados-App-Parameta-S.A.S.svg?style=svg)](https://app.circleci.com/pipelines/github/NicolasAguilera9906/Empleados-App-Parameta-S.A.S)
 
 ### Instalación y ejecución mediante Gradle
 
