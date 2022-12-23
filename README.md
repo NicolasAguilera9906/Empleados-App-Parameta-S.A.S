@@ -120,9 +120,13 @@ con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleado
 
 ### Validación Empleado mayor de edad
 
+1. En este caso añadiremos un empleado que no es mayor de edad como observamos a continuacion:
 
+![class](imagenes/post13.png)
 
-### Validación del formato de la fecha
+2. Al intentar añadir obtendremos el siguiente mensaje de error indicando que el Empleado es menor de 18 años 
+
+![class](imagenes/post14.png)
 
 
 
@@ -171,38 +175,17 @@ The client accesses a JS application deployed on Amazon S3. This application con
 
 ![deploy](img/4.png)
 
-## Tests
-
-### Demonstration videos
-
-#### Application running on AWS EC2
-
-[View video](https://www.youtube.com/watch?v=TSVzcVlf-To)
-
-#### Application running on API Gateway
-
-[View video](https://www.youtube.com/watch?v=YJnfLfLFuI0)
-
-#### Accessing the application from Amazon S3
-
-[View video](https://www.youtube.com/watch?v=yeHtSDbs7wM)
-
-#### JUnit tests
-
-A test was made to verify that the application correctly converts the degrees
-
-![test](img/5.png)
 
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Spark](http://sparkjava.com/) - Micro framework for creating web applications in Java 8
 
-## Author
+## Autor
 
 * **Nicolás Aguilera Contreras** 
 
 ## License
 
-This project is under GNU General Public License - see the [LICENSE](LICENSE) file for details.
+Este proyecto está bajo la GNU General Public License - ver el archivo [LICENSE](LICENSE) para más detalles.
 
