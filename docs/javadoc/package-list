@@ -1,0 +1,5 @@
+com.parameta.empleadoapp
+com.parameta.empleadoapp.controladores
+com.parameta.empleadoapp.modelos
+com.parameta.empleadoapp.persistencia.repositorios
+com.parameta.empleadoapp.servicios
