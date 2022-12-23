@@ -154,20 +154,9 @@ con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleado
 
 ## Documentacion
 
-Ver [Documentacion](https://github.com/NicolasAguilera9906/Empleados-App-Parameta-S.A.S)
+Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta-S.A.S/javadoc/index.html)
 
-## Architecture
-
-### Class diagram
-
-The SparkWebServer class is in charge of generating a Spark server with 2 endpoints:
-
-/hello for a welcome message
-/celcius for converting degrees Fahrenheit to degrees Celsius.
-
-This class makes use of the TemperatureService class, which is an interface that will provide the temperature services. This class is implemented by the TemperatureServiceImpl class with a specific implementation of the temperature services. In this way, it will be easier for the user to make use of another implementation of these services.
-
-![class](img/3.png)
+## Arquitectura
 
 ### Deployment diagram
 
@@ -175,17 +164,11 @@ The client accesses a JS application deployed on Amazon S3. This application con
 
 ![deploy](img/4.png)
 
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Spark](http://sparkjava.com/) - Micro framework for creating web applications in Java 8
-
 ## Autor
 
 * **Nicolás Aguilera Contreras** 
 
-## License
+## Licencia
 
 Este proyecto está bajo la GNU General Public License - ver el archivo [LICENSE](LICENSE) para más detalles.
 
