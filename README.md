@@ -128,34 +128,6 @@ con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleado
 
 ![class](imagenes/post14.png)
 
-
-
-
-
-
-
-### Front-End
-
-1. First follow the steps to run the Back-End
-
-2. Go to the ```/front``` directory
-
-3. Change the ```/url``` variable in the ```js/webapp.js``` file to ```http://localhost:5000/celcius?value=```
-
-![class](img/1.png)
-
-3. Go to firefox and install [CORS EVERYWHERE](https://addons.mozilla.org/es/firefox/addon/cors-everywhere/#:~:text=The%20button%20can%20be%20found,enabled%2C%20CORS%20rules%20are%20bypassed)
-
-4. Open the ```index.html``` file in your firefox browser
-
-5. You will see the following page and you can convert the degrees
-
-![class](img/2.png)
-
-## Documentacion
-
-Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta-S.A.S/javadoc/index.html)
-
 ## Arquitectura
 
 ### Diagrama de despliegue
@@ -167,7 +139,16 @@ Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta
 
 ### Estructura de la aplicación 
 
-![deploy](imagenes/clases.png)
+La aplicación tiene 4 principales componentes :
+
+1. Controladores : Se encarga de recibir las peticiones HTTP en formato JSON. En este caso, recibe peticios HTTP Post para agregar nuevos Empleados.
+2. Modelos : Define los modelos de la aplicación. En este caso hay un modelo que define la clase Empleado.
+3. Persistencia : Contiene las interfaces que extienden de JPA para que estas clases se conecten a la base de datos MYSQL. Hay una interfaz de persistencia y una implementación específica, lo que permite facilitar su extensión o la adición de funcionalidades distintas para métodos iguales.
+4. Servicios : Conecta la capa de controlares con la capa de persistencia ofreciendo los servicios de la aplicación de empleados. Hay una interfaz de servicios y una implementación específica, lo que permite facilitar su extensión o la adición de funcionalidades distintas para métodos iguales.
+
+## Documentacion
+
+Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta-S.A.S/javadoc/index.html)
 
 ## Autor
 
