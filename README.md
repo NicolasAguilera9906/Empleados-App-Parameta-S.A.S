@@ -16,6 +16,10 @@ siguiente información: Tiempo de Vinculación a la compañía (años, meses), E
 * [Git](https://git-scm.com/) - Sistema de control de versiones
 * [Postman](https://www.postman.com/) - Plataforma API para contruir y usar APIs
 
+## CircleCI
+
+[![CircleCI](https://circleci.com/gh/NicolasAguilera9906/Empleados-App-Parameta-S.A.S.svg?style=svg)](https://app.circleci.com/pipelines/github/NicolasAguilera9906/Empleados-App-Parameta-S.A.S)
+
 ## Instalacion y ejecución
 
 ### Ejecución mediante endpoint en Heroku
@@ -24,7 +28,6 @@ siguiente información: Tiempo de Vinculación a la compañía (años, meses), E
 
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](http://empleados-parameta-app.herokuapp.com/api/v1/empleados)
 
-[![CircleCI](https://circleci.com/gh/NicolasAguilera9906/Empleados-App-Parameta-S.A.S.svg?style=svg)](https://app.circleci.com/pipelines/github/NicolasAguilera9906/Empleados-App-Parameta-S.A.S)
 
 ### Instalación y ejecución mediante Gradle
 
