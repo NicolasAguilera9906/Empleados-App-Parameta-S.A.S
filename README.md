@@ -18,6 +18,10 @@ siguiente información: Tiempo de Vinculación a la compañía (años, meses), E
 
 ## Instalacion y ejecución
 
+### Ejecución mediante endpoint en Heroku
+
+1. El siguiente endpoint desplegado en Heroku está disponible para hacer uso de la aplicación ```http://empleados-parameta-app.herokuapp.com/```
+
 ### Instalación y ejecución mediante Gradle
 
 1. Clone el repositorio
@@ -42,9 +46,6 @@ gradlew bootrun
 
 ![class](imagenes/ins3.png)
 
-### Ejecución mediante endpoint en Heroku
-
-1. También puede utilizar la siguiente dirección para hacer uso de la aplicación ```http://empleados-parameta-app.herokuapp.com/```
 
 ## Uso y casos de prueba
 
