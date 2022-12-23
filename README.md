@@ -152,9 +152,9 @@ con la dirección ```http://empleados-parameta-app.herokuapp.com/api/v1/empleado
 
 ![class](img/2.png)
 
-## Documentation
+## Documentacion
 
-View [Documentation](https://nicolasaguilera9906.github.io/AREP-LAB7/)
+Ver [Documentacion](https://github.com/NicolasAguilera9906/Empleados-App-Parameta-S.A.S)
 
 ## Architecture
 
