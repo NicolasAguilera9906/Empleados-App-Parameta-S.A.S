@@ -158,11 +158,16 @@ Ver [Documentacion](https://nicolasaguilera9906.github.io/Empleados-App-Parameta
 
 ## Arquitectura
 
-### Deployment diagram
+### Diagrama de despliegue
 
-The client accesses a JS application deployed on Amazon S3. This application connects to a route implemented in API Gateway that accesses the service located in AWS EC2. This service is contained in a docker microcontainer and is responsible for performing the temperature calculation.
+1. La aplicación Java (SpringBoot) se encuentra desplegada en Heroku.
+2. Además, la aplicación se comunica con una base de datos relacional mysql por medio de el siguiente servicio se hosting : https://www.freemysqlhosting.net/
 
-![deploy](img/4.png)
+![class](imagenes/arq.png)
+
+### Estructura de la aplicación 
+
+![deploy](imagenes/clases.png)
 
 ## Autor
 
